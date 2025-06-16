@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <OutputType>Library</OutputType>
+	  <TargetFramework>net9.0</TargetFramework>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <Nullable>enable</Nullable>
+	  <PackageId>IATec.Shared.Results</PackageId>
+	  <Authors> Architecture Team</Authors>
+	  <Description>Project developed to help IATec teams to develop their projects faster.</Description>
+	  <RootNamespace>IATec.Shared.Bff.FluentResult</RootNamespace>
+	  <Version>0.1</Version>
+	  <Copyright>@IATec</Copyright>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentResults" Version="3.16.0" />
+  </ItemGroup>
+</Project>
