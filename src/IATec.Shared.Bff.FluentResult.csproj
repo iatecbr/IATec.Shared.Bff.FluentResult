@@ -5,7 +5,7 @@
 	  <TargetFramework>net9.0</TargetFramework>
 	  <ImplicitUsings>enable</ImplicitUsings>
 	  <Nullable>enable</Nullable>
-	  <PackageId>IATec.Shared.Results</PackageId>
+	  <PackageId>IATec.Shared.Bff.FluentResult</PackageId>
 	  <Authors> Architecture Team</Authors>
 	  <Description>Project developed to help IATec teams to develop their projects faster.</Description>
 	  <RootNamespace>IATec.Shared.Bff.FluentResult</RootNamespace>
