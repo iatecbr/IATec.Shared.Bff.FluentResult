@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using FluentResults;
 
-namespace IATec.Shared.Results;
+namespace IATec.Shared.Bff.FluentResult;
 
 public static class ResultExtension
 {
