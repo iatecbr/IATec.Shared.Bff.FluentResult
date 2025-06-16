@@ -14,7 +14,7 @@ steps:
     inputs:
       targetType: 'inline'
       script: |
-        $version = [xml](Get-Content  src/IATec.Shared.Results.csproj)
+        $version = [xml](Get-Content  src/IATec.Shared.Bff.FluentResult.csproj)
         $packageVersion = $version.Project.PropertyGroup.Version
         Write-Host "##vso[task.setvariable variable=packageVersion]$packageVersion"
       displayName: 'Get project version'
@@ -26,7 +26,7 @@ steps:
     inputs:
       displayName: 'Pack nuGet package'
       command: pack
-      packagesToPack: '**/IATec.Shared.Results.csproj'
+      packagesToPack: '**/IATec.Shared.Bff.FluentResult.csproj'
       packDestination: '$(Build.ArtifactStagingDirectory)'
       versioningScheme: byEnvVar
       versionEnvVar: packageVersion

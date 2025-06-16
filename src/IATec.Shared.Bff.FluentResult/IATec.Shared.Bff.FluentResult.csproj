@@ -8,11 +8,9 @@
 		<PackageId>IATec.Shared.Results</PackageId>
 		<Authors> Architecture Team</Authors>
 		<Description>Project developed to help IATec teams to develop their projects faster.</Description>
-		<RootNamespace>IATec.Shared.Results</RootNamespace>
+		<RootNamespace>IATec.Shared.Bff.FluentResult</RootNamespace>
 		<Version>0.1</Version>
-		<Copyright>@IATec</Copyright>
-		<PackageIconUrl>https://assets-services-dev.sdasystems.org/images/icons/standard.library.icon.png</PackageIconUrl>
-		<PackageIcon>icon.png</PackageIcon>
+		<Copyright>@IATec</Copyright>		
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
 	
