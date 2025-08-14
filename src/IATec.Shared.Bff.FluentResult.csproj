@@ -6,11 +6,16 @@
 	  <ImplicitUsings>enable</ImplicitUsings>
 	  <Nullable>enable</Nullable>
 	  <PackageId>IATec.Shared.Bff.FluentResult</PackageId>
-	  <Authors> Architecture Team</Authors>
+	  <Title>IATec Shared Bff FluentResult</Title>
+	  <Authors>IATec | Solution | Platform Team</Authors>
 	  <Description>Project developed to help IATec teams to develop their projects faster.</Description>
 	  <RootNamespace>IATec.Shared.Bff.FluentResult</RootNamespace>
-	  <Version>1.0.0</Version>
-	  <Copyright>@IATec</Copyright>
+	  <Version>1.0.1</Version>
+	  <Copyright>@IATec Solutions</Copyright>
+	  <PackageProjectUrl>https://github.com/iatecbr/IATec.Shared.Bff.FluentResult</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/iatecbr/IATec.Shared.Bff.FluentResult</RepositoryUrl>
+	  <RepositoryType>Git</RepositoryType>
+	  <PackageTags>net</PackageTags>
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
