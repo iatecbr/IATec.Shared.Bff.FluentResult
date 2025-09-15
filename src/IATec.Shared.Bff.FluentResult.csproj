@@ -10,7 +10,7 @@
 	  <Authors>IATec | Solution | Platform Team</Authors>
 	  <Description>Project developed to help IATec teams to develop their projects faster.</Description>
 	  <RootNamespace>IATec.Shared.Bff.FluentResult</RootNamespace>
-	  <Version>1.0.2</Version>
+	  <Version>1.1.0</Version>
 	  <Copyright>@IATec Solutions</Copyright>
 	  <PackageProjectUrl>https://github.com/iatecbr/IATec.Shared.Bff.FluentResult</PackageProjectUrl>
 	  <RepositoryUrl>https://github.com/iatecbr/IATec.Shared.Bff.FluentResult</RepositoryUrl>
