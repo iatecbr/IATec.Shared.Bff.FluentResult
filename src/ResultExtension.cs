@@ -13,6 +13,12 @@ public static class ResultExtension
         return Result.Fail(error);
     }
 
+    public static Result BuildServiceUnavailableError()
+    {
+        var error = new Error(string.Empty, new Error("503"));
+        return Result.Fail(error);
+    }
+
     public static Error BuildBadRequestError(this string message)
     {
         return new Error(message, new Error("400"));
