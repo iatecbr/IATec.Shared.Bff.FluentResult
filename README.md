@@ -12,18 +12,23 @@ A .NET library that extends [FluentResults](https://github.com/altmann/FluentRes
 
 | Method | HTTP Code | Description |
 |--------|-----------|-------------|
-| `BuildNotFoundError()` | 404 | Creates a failed `Result` representing Not Found. |
-| `BuildServiceUnavailableError()` | 503 | Creates a failed `Result` representing Service Unavailable. |
+| `ResultExtension.BuildNotFoundError()` | 404 | Creates a failed `Result` representing Not Found. |
+| `ResultExtension.BuildServiceUnavailableError()` | 503 | Creates a failed `Result` representing Service Unavailable. |
 | `"message".BuildBadRequestError()` | 400 | Creates an `Error` representing Bad Request. |
 | `"message".BuildInternalServerError()` | 500 | Creates an `Error` representing Internal Server Error. |
-| `BuildError(message, statusCode)` | Custom | Creates an `Error` with an arbitrary status code. |
+| `ResultExtension.BuildError(message, statusCode)` | Custom | Creates an `Error` with an arbitrary status code. |
+
+> **Note:** The extension methods live in the `IATec.Shared.Bff.FluentResult` namespace. To call the static helpers without qualifying the type, add `using static IATec.Shared.Bff.FluentResult.ResultExtension;` at the top of your file.
 
 ## Response Builder
 
 Use `BuildResultResponse<T>()` or `BuildResultResponse()` to evaluate a `Result` and automatically derive the dominant HTTP status code:
 
 ```csharp
-var result = Result.Fail("Not Found".BuildNotFoundError());
+using IATec.Shared.Bff.FluentResult;
+using static IATec.Shared.Bff.FluentResult.ResultExtension;
+
+var result = Result.Fail(BuildNotFoundError());
 (int statusCode, Result response) = result.BuildResultResponse();
 // statusCode == 404
 ```
