@@ -52,12 +52,16 @@ public static class ResultExtension
 
     /// <summary>
     /// Builds a custom <see cref="Error"/> with the given message and optional HTTP status code.
+    /// When <paramref name="statusCode"/> is null or empty, the error is created without a nested status-code reason.
     /// </summary>
     /// <param name="message">The error message describing what went wrong.</param>
-    /// <param name="statusCode">The HTTP status code to associate with the error.</param>
-    /// <returns>An <see cref="Error"/> containing the message and status code.</returns>
+    /// <param name="statusCode">The optional HTTP status code to associate with the error.</param>
+    /// <returns>An <see cref="Error"/> containing the message and, when provided, the status code.</returns>
     public static Error BuildError(string message, string? statusCode)
     {
+        if (string.IsNullOrWhiteSpace(statusCode))
+            return new Error(message);
+
         return new Error(message, new Error(statusCode));
     }
 

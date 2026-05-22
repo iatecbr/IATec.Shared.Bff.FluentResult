@@ -28,7 +28,7 @@ Use `BuildResultResponse<T>()` or `BuildResultResponse()` to evaluate a `Result`
 using IATec.Shared.Bff.FluentResult;
 using static IATec.Shared.Bff.FluentResult.ResultExtension;
 
-var result = Result.Fail(BuildNotFoundError());
+var result = BuildNotFoundError();
 (int statusCode, Result response) = result.BuildResultResponse();
 // statusCode == 404
 ```
